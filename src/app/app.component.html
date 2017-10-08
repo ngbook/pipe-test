@@ -1,0 +1,16 @@
+
+<div class="pipe-test-wrap">
+    <h2>{{time | date:'y-MM-dd HH:mm:ss' }}</h2>
+    <h2>{{obj | json }}</h2>
+    <h2>{{str | lowercase }}</h2>
+    <h2>{{str | uppercase }}</h2>
+    <h2>{{money | currency:'CNY':true:'2.2-2' }}</h2>
+    <h2>{{num | number:'6.2-4' }}</h2>
+    <h2>{{decimal | percent:'2.2-3' }}</h2>
+    <h2>{{arr | slice:2:5 }}</h2>
+    <h2>{{str | slice:-5 }}</h2>titlecase
+    <ul class="items">
+        <li *ngFor="let d of arr | slice:2:-2">{{d}}</li>
+    </ul>
+    <h2>{{str2 | titlecase }}</h2>
+</div>
